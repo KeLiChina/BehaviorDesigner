@@ -8,8 +8,8 @@ public class MyCanSee : Conditional
 {
 
     public Transform[] targets;
-    public float viewDistance = 7f;
-    public float fieldOfViewAngle = 90;
+    public SharedFloat viewDistance = 7f;
+    public SharedFloat fieldOfViewAngle = 90;
 	// public Transform target;
 	public SharedTransform target;
     public override TaskStatus OnUpdate()
@@ -20,7 +20,7 @@ public class MyCanSee : Conditional
         {
             float disatance = (target.position - transform.position).magnitude;
             float angle = Vector3.Angle(transform.forward, target.position - transform.position);
-            if (disatance < viewDistance && angle < fieldOfViewAngle * 0.5f)
+            if (disatance < viewDistance.Value && angle < fieldOfViewAngle.Value * 0.5f)
             {
 				this.target.Value = target;
                 return TaskStatus.Success;

@@ -10,14 +10,14 @@ using UnityEngine;
 public class MySeek : Action
 {
 
-    public float speed = 6;
+    public SharedFloat speed = 6;
     public SharedTransform target;
-	public float arriveDistance = 0.1f;
+	public SharedFloat arriveDistance = 0.1f;
 	private float sqrArriveDistance;
 	public override void OnStart()
 	{
 		// base.OnStart();
-		sqrArriveDistance = arriveDistance * arriveDistance;
+		sqrArriveDistance = arriveDistance.Value * arriveDistance.Value;
 	}
     public override TaskStatus OnUpdate()
     {
@@ -26,7 +26,7 @@ public class MySeek : Action
             return TaskStatus.Failure;
         }
         transform.LookAt(target.Value.position);
-        transform.position = Vector3.MoveTowards(transform.position, target.Value.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, target.Value.position, speed.Value * Time.deltaTime);
 		if((target.Value.position - transform.position).sqrMagnitude < sqrArriveDistance)
 		{
 			return TaskStatus.Success;
