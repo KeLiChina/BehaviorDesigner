@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using BehaviorDesigner.Runtime.Tasks;
+using BehaviorDesigner.Runtime;
 using UnityEngine;
 
 ///
@@ -10,7 +11,7 @@ public class MySeek : Action
 {
 
     public float speed = 6;
-    public Transform target;
+    public SharedTransform target;
 	public float arriveDistance = 0.1f;
 	private float sqrArriveDistance;
 	public override void OnStart()
@@ -20,13 +21,13 @@ public class MySeek : Action
 	}
     public override TaskStatus OnUpdate()
     {
-        if (target == null)
+        if (target.Value == null || target == null)
         {
             return TaskStatus.Failure;
         }
-        transform.LookAt(target.position);
-        transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-		if((target.position - transform.position).sqrMagnitude < sqrArriveDistance)
+        transform.LookAt(target.Value.position);
+        transform.position = Vector3.MoveTowards(transform.position, target.Value.position, speed * Time.deltaTime);
+		if((target.Value.position - transform.position).sqrMagnitude < sqrArriveDistance)
 		{
 			return TaskStatus.Success;
 		}
