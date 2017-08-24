@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 1019, y: 442}
   m_MaxSize: {x: 26014, y: 10021}
   vertical: 0
-  controlID: 1696
+  controlID: 2779
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 510, y: 442}
   m_MaxSize: {x: 12010, y: 8042}
   vertical: 0
-  controlID: 1631
+  controlID: 2780
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,8 +144,8 @@ MonoBehaviour:
     y: 0
     width: 202
     height: 1259
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 442}
   m_MaxSize: {x: 4004, y: 8042}
   vertical: 1
-  controlID: 1632
+  controlID: 2781
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -332,14 +332,14 @@ MonoBehaviour:
     width: 1282
     height: 482
   m_SceneLighting: 1
-  lastFramingTime: 336600.6897869706
+  lastFramingTime: 3051.0336339473724
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -56.7, y: 0, z: -39.65}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -56.7, y: 0, z: -39.65}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -366,9 +366,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
-    m_Target: 29.538479
+    m_Target: 33.95085
     speed: 2
-    m_Value: 29.538479
+    m_Value: 33.95085
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_LastLockedObject: {fileID: 0}
-  m_ViewIsLockedToObject: 0
+  m_ViewIsLockedToObject: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -493,18 +493,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Task
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Task
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/keli/UnityProjects/forestli_Projects/BehaviorDesigner
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0a2d0000
-    m_LastClickedID: 11530
+    m_SelectedIDs: 0c2b0000
+    m_LastClickedID: 11020
     m_ExpandedIDs: 6c2a00000c2b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -606,8 +606,8 @@ MonoBehaviour:
     y: 0
     width: 463
     height: 1259
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -641,7 +641,7 @@ MonoBehaviour:
     y: 95
     width: 461
     height: 1238
-  m_ScrollPosition: {x: 0, y: 70}
+  m_ScrollPosition: {x: 0, y: 264.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 100

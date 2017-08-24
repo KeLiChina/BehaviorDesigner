@@ -586,6 +586,7 @@
      <Compile Include="Assets\Behavior Designer\Runtime\Variables\SharedVector2.cs" />
      <Compile Include="Assets\Behavior Designer\Runtime\Variables\SharedVector3.cs" />
      <Compile Include="Assets\Behavior Designer\Runtime\Variables\SharedVector4.cs" />
+     <Compile Include="Assets\Scripts\Flag.cs" />
      <Compile Include="Assets\Scripts\MyCanSee.cs" />
      <Compile Include="Assets\Scripts\MySeek.cs" />
      <Compile Include="Assets\Scripts\Offense.cs" />
