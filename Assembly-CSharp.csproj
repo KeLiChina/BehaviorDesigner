@@ -590,6 +590,7 @@
      <Compile Include="Assets\Scripts\MyCanSee.cs" />
      <Compile Include="Assets\Scripts\MySeek.cs" />
      <Compile Include="Assets\Scripts\Offense.cs" />
+     <Compile Include="Assets\Scripts\Task\Defend.cs" />
      <Compile Include="Assets\Scripts\Task\IsHaveFlag.cs" />
      <None Include="Assets\Behavior Designer\Editor\GridShader.shader" />
  <Reference Include="UnityEngine.UI">
